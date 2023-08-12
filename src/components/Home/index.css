@@ -1,0 +1,21 @@
+/* Write your CSS here */
+.bg-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/ipl-dashboard-lg-bg.png');
+  height: 100vh;
+}
+
+.ipl-logo {
+  height: 42px;
+  margin-top: 30px;
+}
+
+.ipl-dashboard {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 38px;
+  margin-left: 15px;
+}
+
+.ipl-logo-dashboard-container {
+  display: flex;
+}
