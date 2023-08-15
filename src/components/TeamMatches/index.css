@@ -1,1 +1,46 @@
 /* Write your CSS here */
+.RCB {
+  background-image: linear-gradient(to bottom, #a4261d, #0f172a);
+}
+
+.KKR {
+  background-image: linear-gradient(to bottom, #5755a7, #1e293b);
+}
+
+.KXP {
+  background-image: linear-gradient(to bottom, #d91c1f, #1e293b);
+}
+
+.CSK {
+  background-image: linear-gradient(to bottom, #f7db00, #13418b);
+}
+
+.RR {
+  background-image: linear-gradient(to bottom, #13418b, #1e293b);
+}
+
+.MI {
+  background-image: linear-gradient(to bottom, #13418b, #0f172a);
+}
+
+.SH {
+  background-image: linear-gradient(to bottom, #a4261d, #f26d22);
+}
+
+.DC {
+  background-image: linear-gradient(to bottom, #13418b, #4f5db0);
+}
+
+.bg-con {
+  height: 100vh;
+}
+
+.team-banner {
+  width: 400px;
+}
+
+.latest-matches {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 14px;
+}

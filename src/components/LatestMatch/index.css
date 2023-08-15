@@ -1,1 +1,52 @@
 /* Write your CSS here */
+.latest-matches-container {
+  background-color: #1e293b;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 8px;
+  border-radius: 8px;
+}
+
+.competing-team {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.venue-details {
+  margin-top: 60px;
+}
+
+.date {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.venue {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 10px;
+}
+
+.competing-team-logo {
+  height: 120px;
+  margin: 60px;
+}
+
+.sun-heading {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 14px;
+  text-align: right;
+}
+
+.answer {
+  font-family: 'Bree Serif';
+  color: #ffffff;
+  font-size: 9px;
+  text-align: right;
+}

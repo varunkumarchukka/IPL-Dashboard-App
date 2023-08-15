@@ -1,7 +1,6 @@
 // Write your code here
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
-
 import TeamCard from '../TeamCard'
 import './index.css'
 
@@ -15,12 +14,11 @@ class Home extends Component {
   getIplTeamsList = async () => {
     const response = await fetch('https://apis.ccbp.in/ipl')
     const data = await response.json()
-    const updatedList = data.map(eachTeam => ({
+    const updatedList = data.teams.map(eachTeam => ({
       id: eachTeam.id,
       name: eachTeam.name,
       teamImageUrl: eachTeam.team_image_url,
     }))
-    console.log(updatedList)
     this.setState({iplTeamsList: updatedList, isLoading: false})
   }
 
@@ -37,11 +35,17 @@ class Home extends Component {
           <h1 className="ipl-dashboard">IPL Dashboard</h1>
         </div>
 
-        <ul>
-          {iplTeamsList.map(eachTeam => (
-            <TeamCard eachTeamDetails={eachTeam} key={eachTeam.id} />
-          ))}
-        </ul>
+        {isLoading ? (
+          <div>
+            <Loader type="Oval" color="#ffffff" height={50} width={50} />
+          </div>
+        ) : (
+          <ul className="list-container">
+            {iplTeamsList.map(eachTeam => (
+              <TeamCard eachTeamDetails={eachTeam} key={eachTeam.id} />
+            ))}
+          </ul>
+        )}
       </div>
     )
   }
